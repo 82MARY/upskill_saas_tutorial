@@ -1,1 +1,41 @@
-<h1>Contact Form</h1>
+<div class="container">
+	
+	<h3 class="text-center">Contact Me</h3>
+	
+<!--HTML mode to make a Form-->
+<!--	<form>-->
+<!--		<label>Name</label>-->
+<!--		<input type="text">-->
+<!--		<br>-->
+<!--		<label>Email</label>-->
+<!--		<input type="text">-->
+<!--		<br>-->
+<!--		<label>Password</label>-->
+<!--		<input type="password">-->
+<!--		<br>-->
+<!--		<label>Comments</label>-->
+<!--		<input type="text">-->
+<!--		<br>-->
+<!--		<input type="submit">-->
+<!--	</form>-->
+
+<!--Rails way for a form-->
+	<%= form_for "/contacts" do |f| %>
+	
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+		
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+		
+		<%= f.label :password %>
+		<%= f.text_field :password %>
+		
+		<%= f.label :comments %>
+		<%= f.text_area :comments %>
+		
+		<%= f.submit 'Submit' %>
+		
+	<% end %>
+
+</div>
