@@ -29,7 +29,7 @@
           
           <%= link_to root_path, class: "navbar-brand" do %>
           <i class="fa fa-group"></i>
-          STAGNO M. A.
+          Stagno M. A.
           <% end %>
           
         </div>
@@ -37,10 +37,11 @@
           <ul class="nav navbar-nav navbar-right">
             
             <!--<li><a href="/about">About</a></li> Classic HTML code-->
-            
             <!--<li><%= link_to "ABOUT", "/about" %></li> rails code-->
             
-            <li><%= link_to "ABOUT", about_path %></li> <!--using Prefix-->
+            <!--using Prefix-->
+            <li><%= link_to "About", about_path %></li> 
+            <li><%= link_to "Contact Us", new_contact_path %></li>
             
           </ul>
         </div><!-- /.navbar-collapse -->
